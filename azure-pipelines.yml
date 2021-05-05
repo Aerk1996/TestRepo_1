@@ -7,10 +7,10 @@ trigger:
 - main
 
 
-  pool:
+pool:
   name: Default
   demands:
-   - agent.name -equals myWindowsAgent
+   - agent.name -equals myWindowsAgent  
 
 steps:
 - task: Gradle@2
