@@ -6,8 +6,11 @@
 trigger:
 - main
 
-pool:
-  vmImage: myWindowsAgent
+
+  pool:
+  name: Default
+  demands:
+   - agent.name -equals myWindowsAgent
 
 steps:
 - task: Gradle@2
