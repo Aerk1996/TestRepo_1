@@ -11,16 +11,7 @@ pool:
   name: myWindowsAgent  
   demands:
    - agent.name -equals LAPTOP-1FTK4GNF
-- task: Maven@3
-  inputs:
-    mavenPomFile: 'pom.xml'
-    publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    javaHomeOption: 'JDKVersion'
-    mavenVersionOption: 'Default'
-    mavenAuthenticateFeed: false
-    effectivePomSkip: false
-    sonarQubeRunAnalysis: false
+
 steps:
 - task: Gradle@2
   inputs:
