@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: myWindowsAgent
 
 steps:
 - task: Gradle@2
